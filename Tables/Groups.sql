@@ -15,5 +15,5 @@ Groups(
 
     FOREIGN KEY (user_id)
         REFERENCES Users(user_id)
-        ON UPDATE CASCADE ON DELETE RESTRICT,
+        ON UPDATE CASCADE ON DELETE RESTRICT
 );
