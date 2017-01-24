@@ -12,4 +12,8 @@ Groups(
     # Only allow each user a single group with the
     # same name.
     UNIQUE KEY `user_group` (user_id, name)
+
+    FOREIGN KEY (user_id)
+        REFERENCES Users(user_id)
+        ON UPDATE CASCADE ON DELETE RESTRICT,
 );
