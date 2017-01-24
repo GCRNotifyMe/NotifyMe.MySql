@@ -26,11 +26,11 @@ Devices(
     active INT(1) DEFAULT 1
     COMMENT="Indicates if the device is active or deleted (NULL)",
 
+    UNIQUE KEY `device_user` (user_id, name, active)
+
     FOREIGN KEY (user_id)
         REFERENCES Users(user_id)
         ON UPDATE CASCADE ON DELETE RESTRICT,
 
     PRIMARY KEY (device_id),
-
-    UNIQUE KEY `device_user` (user_id, name, active)
 );
