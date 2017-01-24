@@ -5,7 +5,7 @@ Groups(
     COMMENT="Auto-assigned group id",
     user_id INT(32) NOT NULL,
 
-    name VARCHAR(255) NOT NULL,
+    name VARCHAR(127) NOT NULL,
 
     PRIMARY KEY (group_id),
 
