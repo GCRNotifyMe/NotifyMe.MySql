@@ -10,7 +10,9 @@ Notifications(
 
     sent DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
-    unread BOOL
+    unread BOOL NOT NULL DEFAULT TRUE,
+    read DATETIME
+    COMMENT="The date/time the alert is read",
 
     source VARCHAR(255) NOT NULL,
 

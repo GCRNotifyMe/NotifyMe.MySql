@@ -14,7 +14,7 @@ Users(
     lastSeen DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
     COMMENT="The last date/time the user sent a message/logged in",
 
-    verified BOOL NOT NULL DEFAULT 0
+    verified BOOL NOT NULL DEFAULT FALSE
     COMMENT="Value indicating if the email was verified",
 
     PRIMARY KEY (user_id)
