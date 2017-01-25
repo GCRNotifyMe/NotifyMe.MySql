@@ -10,6 +10,8 @@ Notifications(
 
     sent DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
+    unread BOOL
+
     source VARCHAR(255) NOT NULL,
 
     alert VARCHAR(255) NOT NULL,

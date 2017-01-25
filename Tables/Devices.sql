@@ -11,7 +11,7 @@ Devices(
 
     name VARCHAR(255) NOT NULL,
 
-    default INT(1) NOT NULL DEFAULT 0
+    default BOOL NOT NULL DEFAULT 0
     COMMENT="Boolean value to indicate if the device is a default",
 
     registered DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
