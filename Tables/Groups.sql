@@ -1,9 +1,9 @@
 CREATE TABLE
 IF NOT EXISTS
 Groups(
-    group_id INT(32) NOT NULL AUTO_INCREMENT
+    group_id INT(32) UNSIGNED NOT NULL AUTO_INCREMENT
     COMMENT="Auto-assigned group id",
-    user_id INT(32) NOT NULL,
+    user_id INT(32) UNSIGNED NOT NULL,
 
     name VARCHAR(127) NOT NULL,
 

@@ -1,7 +1,7 @@
 CREATE TABLE
 IF NOT EXISTS
 Users(
-    user_id INT(32) NOT NULL AUTO_INCREMENT
+    user_id INT(32) UNSIGNED NOT NULL AUTO_INCREMENT
     COMMENT="Auto-assigned user id",
 
     email VARCHAR(255) NOT NULL,

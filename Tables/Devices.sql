@@ -1,9 +1,9 @@
 CREATE TABLE
 IF NOT EXISTS
 Devices(
-    device_id INT(32) NOT NULL AUTO_INCREMENT
+    device_id INT(32) UNSIGNED NOT NULL AUTO_INCREMENT
     COMMENT="Auto-assigned device id",
-    user_id INT(32) NOT NULL
+    user_id INT(32) UNSIGNED NOT NULL
     COMMENT="The id of the user this device is tied to",
 
     serviceID VARCHAR(64) NOT NULL
