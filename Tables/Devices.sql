@@ -11,6 +11,9 @@ Devices(
 
     name VARCHAR(255) NOT NULL,
 
+    type VARCHAR(255) NOT NULL
+    COMMENT 'The type of device. iPhone, etc.',
+
     defaultDevice BOOL NOT NULL DEFAULT FALSE
     COMMENT 'Boolean value to indicate if the device is a default',
 
