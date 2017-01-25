@@ -6,7 +6,7 @@ Devices(
     user_id INT(32) UNSIGNED NOT NULL
     COMMENT="The id of the user this device is tied to",
 
-    serviceID VARCHAR(64) NOT NULL
+    service_id VARCHAR(64) NOT NULL
     COMMENT="The id used by the notification service (APNS/GCM)",
 
     name VARCHAR(255) NOT NULL,
