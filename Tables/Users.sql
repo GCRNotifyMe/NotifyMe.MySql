@@ -6,7 +6,7 @@ Users(
 
     email VARCHAR(255) NOT NULL,
     username VARCHAR(255) NOT NULL,
-    password VARCHAR(123) NOT NULL
+    password VARCHAR(255) NOT NULL
     COMMENT 'Users password. Hashed with PHP crypt()',
 
     registered DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
