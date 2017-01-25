@@ -2,7 +2,7 @@ CREATE TABLE
 IF NOT EXISTS
 Groups(
     group_id INT(32) UNSIGNED NOT NULL AUTO_INCREMENT
-    COMMENT="Auto-assigned group id",
+    COMMENT 'Auto-assigned group id',
     user_id INT(32) UNSIGNED NOT NULL,
 
     name VARCHAR(127) NOT NULL,
@@ -11,7 +11,7 @@ Groups(
 
     # Only allow each user a single group with the
     # same name.
-    UNIQUE KEY `user_group` (user_id, name)
+    UNIQUE KEY `user_group` (user_id, name),
 
     FOREIGN KEY (user_id)
         REFERENCES Users(user_id)
